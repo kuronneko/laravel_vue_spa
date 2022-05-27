@@ -1,8 +1,8 @@
 <template>
-    <div class="container">
+    <div class="container mt-4">
         <div class="row">
             <div class="col-12">
-                <div class="card">
+                <div class="card bg-dark text-white">
                     <div class="card-header">
                         <h4>Crear Blog</h4>
                     </div>
@@ -16,13 +16,13 @@
                                     </div>
                                 </div>
                                 <div class="col-md-12 mb-2">
+                                    <label for="floatingTextarea2">Contenido</label>
                                     <div class="form-floating">
                                         <textarea cols="30" rows="10" class="form-control" id="floatingTextarea2" v-model="blog.contenido"></textarea>
-                                        <label for="floatingTextarea2">Contenido</label>
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <button type="submit" class="btn btn-danger">Guardar</button>
+                                <div class="col-md-12 mt-3">
+                                    <button type="submit" class="btn btn-info text-white">Guardar</button>
                                 </div>
                             </div>
                         </form>

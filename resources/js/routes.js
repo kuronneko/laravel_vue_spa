@@ -34,3 +34,8 @@ export const routes = [
         component:Editar
     },
 ];
+
+
+
+
+

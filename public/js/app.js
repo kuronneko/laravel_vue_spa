@@ -19803,7 +19803,7 @@ var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
   placeholder: "Search",
   "aria-label": "Search"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("button", {
-  "class": "btn btn-outline-success",
+  "class": "btn btn-outline-info",
   type: "submit"
 }, "Search")], -1
 /* HOISTED */

@@ -1,13 +1,15 @@
 <template>
-    <div class="container">
+    <div class="container mt-4">
         <div class="row">
-            <div class="col-lg-12 mb-4">
-                <router-link :to='{ name: "crearBlog" }' class="btn btn-dark text-white mt-4">Nuevo</router-link>
-            </div>
             <div class="col-lg-12">
+                        <div class="card bg-dark text-white">
+                            <div class="card-header">
+                <router-link :to='{ name: "crearBlog" }' class="btn btn-info text-white">Nuevo Blog</router-link>
+                            </div>
+                            <div class="card-body">
                 <div class="table-responsive">
-                    <table class="bg-primary text-white">
-                        <thead>
+                    <table class="table table-dark table-hover">
+                        <thead class="bg-dark text-white">
                             <tr>
                                 <th>ID</th>
                                 <th>Titulo</th>
@@ -22,14 +24,18 @@
                                 <td>{{ blog.titulo }}</td>
                                 <td>{{ blog.contenido }}</td>
                                 <td>
-                                    <router-link :to='{ name: "editarBlog", params: { id: blog.id } }' class="btn btn-danger">
+                                    <div class="btn-group">
+                                    <router-link :to='{ name: "editarBlog", params: { id: blog.id } }' class="btn btn-info text-white">
                                         Editar</router-link>
                                     <a type="button" @click="borrarBlog(blog.id)" class="btn btn-danger">Borrar</a>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                            </div>
+                        </div>
             </div>
         </div>
     </div>
